@@ -46,10 +46,8 @@ if __name__ == '__main__':
     for dimensions in matrix_dimensions:
         results.append(run_matrix_multiplication(dimensions))
 
-    # Separar los resultados en listas para x (tiempo) e y (dimensión)
     elapsed_times, matrix_sizes = zip(*results)
 
-    # Crear la gráfica
     plt.plot(elapsed_times, matrix_sizes, marker='o')
     plt.title('Tiempo de ejecución vs Dimensión de la Matriz')
     plt.xlabel('Tiempo de ejecución (segundos)')

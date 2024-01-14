@@ -56,3 +56,4 @@ def mapreduce(matrices, matrix_size):
     reduced_result = reduce_function(matrix_size, [item for sublist in mapped_results for item in sublist])
 
     return reduced_result
+
